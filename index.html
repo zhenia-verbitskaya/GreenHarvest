@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.png" />
+    <title>Green Harvest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="body">
+    <div class="body-container">
+      <!-- header -->
+      <header class="container header" id="header">
+        <a href="/" class="header-logo">
+          <svg class="header-logo-img">
+            <use href="symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li>
+              <a class="header-menu-link" href="#how-to">How It Works</a>
+            </li>
+            <li>
+              <a class="header-menu-link" href="#products">Vegetables</a>
+            </li>
+            <li>
+              <a class="header-menu-link" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+          <a class="header-btn" href="#order-form">Shop now</a>
+        </nav>
+        <button type="button" class="mobile-menu-open-btn">
+          <svg class="mobile-menu-open-btn-img">
+            <use href="symbol-defs.svg#icon-mobile-menu-open-btn"></use>
+          </svg>
+        </button>
+        <!-- mobile menu -->
+        <div class="mobile-menu-container">
+          <div class="mobile-menu-top">
+            <button type="button" class="mobile-menu-close-btn">
+              <svg class="mobile-menu-close-btn-img">
+                <use href="symbol-defs.svg#icon-mobile-menu-close-btn"></use>
+              </svg>
+            </button>
+            <nav class="mobile-nav">
+              <ul class="mobile-menu">
+                <li>
+                  <a class="mobile-menu-link" href="#how-to">How It Works</a>
+                </li>
+                <li>
+                  <a class="mobile-menu-link" href="#products">Vegetables</a>
+                </li>
+                <li>
+                  <a class="mobile-menu-link" href="#reviews">Reviews</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <a class="mobile-nav-btn" href="#order-form">Shop now</a>
+        </div>
+      </header>
+      <main>
+        <!-- hero section -->
+        <section class="container hero-section">
+          <div class="hero-container">
+            <h1 class="hero-title">Organic vegetables to your diet today!</h1>
+            <p class="hero-description">
+              Our expertly curated vegetable baskets are made with the freshest,
+              highest quality vegetables available. Fresh Harvest Box has got
+              you covered. Fresh, high-quality vegetables in expertly curated
+              vegetable baskets delivered to you.
+            </p>
+          </div>
+          <picture>
+            <!-- start from desktop version and down -->
+            <source
+              srcset="
+                ./images/hero-img-desk.jpg    1x,
+                ./images/hero-img-desk-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img-tab.jpg    1x,
+                ./images/hero-img-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img-mob.jpg    1x,
+                ./images/hero-img-mob-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <!-- in img save the biggest picture -->
+            <img
+              src="./images/hero-img-desk.jpg"
+              alt="A wooden basket with fresh vegetables"
+            />
+          </picture>
+        </section>
+        <!-- how it works section -->
+        <section class="container how-to-section" id="how-to">
+          <div class="how-to-img-container">
+            <picture>
+              <source
+                srcset="
+                  ./images/how-to-img-desk.jpg    1x,
+                  ./images/how-to-img-desk-2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/how-to-img-tab.jpg    1x,
+                  ./images/how-to-img-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/how-to-img-mob.jpg    1x,
+                  ./images/how-to-img-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/how-to-img-tab.jpg"
+                alt="A woman cutting an apple"
+                class="how-to-img"
+              />
+            </picture>
+          </div>
+          <div class="how-to-steps-container">
+            <h2 class="how-to-title">
+              To order your <span class="accent">vegetable</span> basket, simply
+              follow these
+              <span class="accent">easy steps</span>
+            </h2>
+            <p class="how-to-description">
+              Our baskets are assembled with care and delivered straight to your
+              doorstep, so you can enjoy the taste of fresh fruit without ever
+              leaving your home.
+            </p>
+            <ul class="how-to-steps">
+              <li class="how-to-step">
+                <div class="step-count">
+                  <div class="step">1</div>
+                </div>
+                <p class="step-description">
+                  Just choose <span class="accent">the vegetable</span> you want
+                  to order by clicking on the checkboxes
+                  <span class="accent">next to it</span>.
+                </p>
+              </li>
+              <li class="how-to-step">
+                <div class="step-count">
+                  <div class="step">2</div>
+                </div>
+                <p class="step-description">
+                  Click on <span class="accent">the basket</span> and fill out
+                  <br />the form.
+                </p>
+              </li>
+              <li class="how-to-step">
+                <div class="step-count">
+                  <div class="step">3</div>
+                </div>
+                <p class="step-description">
+                  Sit back and relax! Your
+                  <span class="accent">fresh vegetables</span> basket will be
+                  delivered.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- advertisment section -->
+        <section class="container advertisment-section">
+          <p class="advertisment-title">
+            <span class="accent">Discount up to 40%!</span>
+            <span class="float-one">Taste</span>
+            <span class="text">
+              <span class="float-two">Taste</span>
+              the vitamins and keep your health
+            </span>
+          </p>
+        </section>
+        <!-- products section -->
+        <section class="container products-section" id="products">
+          <h2 class="products-title">
+            Organic <span class="accent">vegetables</span>
+          </h2>
+          <p class="products-description">
+            Our organic vegetables are hand-picked from local farms and
+            delivered straight to your doorstep, ensuring that you get the
+            freshest and most nutritious produce possible.
+          </p>
+          <ul class="products-list">
+            <!-- card-1 -->
+            <li class="product-card-container">
+              <div class="product-card">
+                <div class="product-card-front">
+                  <h3 class="product-front-title">eggplant</h3>
+                  <p class="product-price">60 uah / kg</p>
+                  <img
+                    srcset="
+                      ./images/product-eggplant.png    1x,
+                      ./images/product-eggplant-2x.png 2x
+                    "
+                    src="./images/product-eggplant.png"
+                    alt="Eggplant"
+                  />
+                </div>
+                <div class="product-card-back">
+                  <h3 class="product-back-title">eggplant</h3>
+                  <p class="product-back-description">
+                    Eggplant is used in the cuisines of many countries. Due to
+                    its texture and bulk, it is sometimes used as a meat
+                    substitute in vegan and vegetarian cuisines. Eggplant can be
+                    steamed, stir-fried, pan fried, deep fried, barbecued,
+                    roasted, stewed, curried, or pickled.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- card-2 -->
+            <li class="product-card-container">
+              <div class="product-card">
+                <div class="product-card-front">
+                  <h3 class="product-front-title">leek</h3>
+                  <p class="product-price">50 uah / kg</p>
+                  <img
+                    srcset="
+                      ./images/product-leek.png    1x,
+                      ./images/product-leek-2x.png 2x
+                    "
+                    src="./images/product-leek.png"
+                    alt="Leek"
+                  />
+                </div>
+                <div class="product-card-back">
+                  <h3 class="product-back-title">leek</h3>
+                  <p class="product-back-description">
+                    Leeks have a mild, onion-like taste. In its raw state, the
+                    vegetable is crunchy and firm. The edible portions of the
+                    leek are the white base of the leaves, the light green
+                    parts, and to a lesser extent, the dark green parts of the
+                    leaves. The dark green portion is usually discarded because
+                    it has a tough texture, but it can be sautéed or more
+                    commonly added to stock for flavor.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- card-3 -->
+            <li class="product-card-container">
+              <div class="product-card">
+                <div class="product-card-front">
+                  <h3 class="product-front-title">mushrooms</h3>
+                  <p class="product-price">40 uah / kg</p>
+                  <img
+                    srcset="
+                      ./images/product-mushrooms.png    1x,
+                      ./images/product-mushrooms-2x.png 2x
+                    "
+                    src="./images/product-mushrooms.png"
+                    alt="Mushrooms"
+                  />
+                </div>
+                <div class="product-card-back">
+                  <h3 class="product-back-title">mushrooms</h3>
+                  <p class="product-back-description">
+                    Mushrooms may be cooked before consumption to improve
+                    texture and lower trace levels of toxic hydrazines. Frying,
+                    roasting, baking, and microwaving are all used to prepare
+                    mushrooms. Cooking lowers the amount of water present in the
+                    food. Mushrooms do not go mushy with long term cooking.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- card-4 -->
+            <li class="product-card-container">
+              <div class="product-card">
+                <div class="product-card-front">
+                  <h3 class="product-front-title">corn</h3>
+                  <p class="product-price">60 uah / kg</p>
+                  <img
+                    srcset="
+                      ./images/product-corn.png    1x,
+                      ./images/product-corn-2x.png 2x
+                    "
+                    src="./images/product-corn.png"
+                    alt="Corn"
+                  />
+                </div>
+                <div class="product-card-back">
+                  <h3 class="product-back-title">corn</h3>
+                  <p class="product-back-description">
+                    Corn and cornmeal constitute a staple food in many regions
+                    of the world. Corn is used to produce the food ingredient
+                    cornstarch. It can be hydrolyzed and enzymatically treated
+                    to produce high fructose corn syrup, a sweetener. Corn also
+                    may be fermented and distilled to produce Bourbon whiskey.
+                    Corn oil is extracted from the germ of the grain.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- card-5 -->
+            <li class="product-card-container">
+              <div class="product-card">
+                <div class="product-card-front">
+                  <h3 class="product-front-title">sweet potatoes</h3>
+                  <p class="product-price">50 uah / kg</p>
+                  <img
+                    srcset="
+                      ./images/product-sweetpotatoes.png    1x,
+                      ./images/product-sweetpotatoes-2x.png 2x
+                    "
+                    src="./images/product-sweetpotatoes.png"
+                    alt="Sweet potatoes"
+                  />
+                </div>
+                <div class="product-card-back">
+                  <h3 class="product-back-title">sweet potatoes</h3>
+                  <p class="product-back-description">
+                    Sweet potatoes are one of the most versatile foods around.
+                    They are great for babies and kids, adults, older adults,
+                    athletes, etc. Sweet potatoes are nutritionally dense, which
+                    is one reason why they are an appealing food to all people.
+                    There are so many ways to eat sweet potatoes: from breads
+                    and muffins, to pasta and pizza crust.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- card-6 -->
+            <li class="product-card-container">
+              <div class="product-card">
+                <div class="product-card-front">
+                  <h3 class="product-front-title">carrot</h3>
+                  <p class="product-price">40 uah / kg</p>
+                  <img
+                    srcset="
+                      ./images/product-carrot.png    1x,
+                      ./images/product-carrot-2x.png 2x
+                    "
+                    src="./images/product-carrot.png"
+                    alt="Carrot"
+                  />
+                </div>
+                <div class="product-card-back">
+                  <h3 class="product-back-title">carrot</h3>
+                  <p class="product-back-description">
+                    Carrot can be eaten in a variety of ways. It may be chopped
+                    and boiled, fried or steamed, and cooked in soups and stews,
+                    as well as baby and pet foods. A well-known dish is carrots
+                    julienne. Together with onion and celery, carrots are one of
+                    the primary vegetables used to make various broths.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- reviews section -->
+        <section class="container reviews-section" id="reviews">
+          <h2 class="reviews-title">
+            Reviews from our <span class="accent">customers</span>
+          </h2>
+          <p class="reviews-description">
+            Words of our customers: impressions and opinions about the quality
+            of our services and the freshness of our products.
+          </p>
+          <div class="swiper reviews-swiper">
+            <div class="swiper-wrapper review-cards">
+              <div class="swiper-slide review-card">
+                <img
+                  srcset="./images/review-1.jpg 1x, ./images/review-1-2x.jpg 2x"
+                  src="./images/review-1.jpg"
+                  alt="Ivan Vashenko"
+                  class="review-img"
+                />
+                <h4 class="review-author">Ivan Vashenko</h4>
+                <p class="review-text">
+                  These vegetables are my secret to delicious and healthy meals.
+                  The quality is always at the highest level, the aroma and
+                  taste are enchanting. I advise every fan of real products!
+                </p>
+              </div>
+              <div class="swiper-slide review-card">
+                <img
+                  srcset="./images/review-2.jpg 1x, ./images/review-2-2x.jpg 2x"
+                  src="./images/review-2.jpg"
+                  alt="Victoria Romashenko"
+                  class="review-img"
+                />
+                <h4 class="review-author">Victoria Romashenko</h4>
+                <p class="review-text">
+                  I love how fast and fresh the vegetables are delivered. Salads
+                  always turn out so appetizing, and soups are real
+                  masterpieces. The quality is impeccable!
+                </p>
+              </div>
+              <div class="swiper-slide review-card">
+                <img
+                  srcset="./images/review-3.jpg 1x, ./images/review-3-2x.jpg 2x"
+                  src="./images/review-3.jpg"
+                  alt="Ihor Trachuk"
+                  class="review-img"
+                />
+                <h4 class="review-author">Ihor Trachuk</h4>
+                <p class="review-text">
+                  Recently tried my fresh tomatoes and peppers - amazing! The
+                  authenticity of the taste, as if from the garden directly to
+                  my table. It is now my main vegetable supplier.
+                </p>
+              </div>
+              <div class="swiper-slide review-card">
+                <img
+                  srcset="./images/review-4.jpg 1x, ./images/review-4-2x.jpg 2x"
+                  src="./images/review-4.jpg"
+                  alt="Natalia Chatuk"
+                  class="review-img"
+                />
+                <h4 class="review-author">Natalia Chatuk</h4>
+                <p class="review-text">
+                  I was pleasantly surprised by the variety of vegetables
+                  offered by Green Harvest. They also have harvest boxes for
+                  every taste. I ordered vegetables to celebrate a special
+                  occasion and received impeccable service and refinement in
+                  every detail.
+                </p>
+              </div>
+              <div class="swiper-slide review-card">
+                <img
+                  srcset="./images/review-5.jpg 1x, ./images/review-5-2x.jpg 2x"
+                  src="./images/review-5.jpg"
+                  alt="Sergiy Rybachok"
+                  class="review-img"
+                />
+                <h4 class="review-author">Sergiy Rybachok</h4>
+                <p class="review-text">
+                  As always, every order I receive from Green Harvest exceeds my
+                  expectations - superb quality all round, including service and
+                  customer support levels. A huge thank you.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <!-- order section -->
+        <section class="container order-section">
+          <h2 class="order-title">
+            Fresh <span class="accent">Harvest</span> Box has got you covered
+          </h2>
+          <p class="order-description">
+            Our boxes are packed with delicious, nutritious vegetables, perfect
+            for anyone looking to eat healthier or support local farmers. Order
+            your box today and start enjoying the best that nature has to offer!
+          </p>
+          <div class="order-wrapper" id="order-form">
+            <div class="form-container">
+              <h3 class="form-title">
+                Ordering <span class="accent">from us</span> is quick and easy!
+                Fill out <span class="accent">the form</span> below and we will
+                contact you!
+              </h3>
+              <form class="order-form">
+                <input
+                  type="text"
+                  class="order-form-input"
+                  name="user-name"
+                  placeholder="Full Name"
+                  required
+                />
+                <input
+                  type="email"
+                  class="order-form-input"
+                  name="user-email"
+                  placeholder="Email"
+                  required
+                />
+                <textarea
+                  class="order-form-textarea"
+                  name="user-comment"
+                  placeholder="Comment"
+                ></textarea>
+                <button type="submit" class="order-form-btn">Send</button>
+              </form>
+            </div>
+            <div class="socials">
+              <picture>
+                <source
+                  srcset="
+                    ./images/order-img-desk.jpg    1x,
+                    ./images/order-img-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/order-img-tab.jpg    1x,
+                    ./images/order-img-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/order-img-mob.jpg    1x,
+                    ./images/order-img-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/order-img-desk.jpg"
+                  alt="A woman preparing a cocktail"
+                  class="order-img"
+                />
+              </picture>
+              <h4 class="socials-title">Follow us on our social networks:</h4>
+              <div class="social-links">
+                <a href="#" class="social-link">instagram</a>
+                <span>/</span>
+                <a href="#" class="social-link">facebook</a>
+                <span>/</span>
+                <a href="#" class="social-link">youtube</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="container footer">
+        <div class="footer-wrapper">
+          <div>
+            <a href="/" class="footer-logo">
+              <svg class="footer-logo-img">
+                <use href="symbol-defs.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <p class="footer-description">
+              Whether you're looking for a healthy snack or a thoughtful gift,
+              our fruit baskets are the perfect choice.
+            </p>
+          </div>
+          <div class="footer-nav-wrapper">
+            <nav class="footer-nav">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="#how-to" class="footer-nav-link">how it works</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#products" class="footer-nav-link">vegetables</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#reviews" class="footer-nav-link">reviews</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="footer-contacts">
+              <a href="tel:+380684439426" class="phone-contact">
+                +380 (68) 443-94-26
+              </a>
+              <a
+                href="https://maps.app.goo.gl/yw75ix2YkKDyCkvE7"
+                target="_blank"
+                class="address-contact"
+              >
+                1678 S. Pioneer Road Salt Lake City UT 84104
+              </a>
+            </address>
+          </div>
+        </div>
+        <div class="footer-legal-info">
+          <div>Privacy Policy <span>/</span> Cookie settings</div>
+          <div>©Green Harvest 2023</div>
+        </div>
+      </footer>
+    </div>
+    <a href="#header" class="to-top-btn">Up</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/scroll-up.js"></script>
+    <script src="./scripts/mobile-menu.js"></script>
+  </body>
+</html>

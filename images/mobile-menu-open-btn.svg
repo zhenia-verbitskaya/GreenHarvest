@@ -1,0 +1,19 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" fill="#282828"/>
+<g id="Tablet" clip-path="url(#clip0_0_1)">
+<rect width="768" height="7443" transform="translate(-696 -32)" fill="#7A3145"/>
+<g id="Hero ">
+<rect width="768" height="1024" transform="translate(-696 -32)" fill="#576F35"/>
+</g>
+<g id="Header">
+<g id="heroicons-outline:menu-alt-1">
+<path id="Vector" d="M6.66663 10H33.3333M6.66663 20H20M6.66663 30H33.3333" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="768" height="7443" fill="white" transform="translate(-696 -32)"/>
+</clipPath>
+</defs>
+</svg>
